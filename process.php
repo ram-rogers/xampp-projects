@@ -58,7 +58,7 @@ if (isset($_POST['signup'])) {
     if ((count($errors) == 0) && ($pswd == $cpswd)) {
         $sql = "insert into register (name, email, ph, password) VALUES ('$name','$email','$phone','$pswd')";
         $result = mysqli_query($db, $sql);
-        header("location:login.php");
+        header("location:success.php");
 
 
 

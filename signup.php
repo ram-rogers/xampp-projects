@@ -25,10 +25,6 @@ include "process.php";
     <div class="card col-lg-5 col-sm-6 col-6">
 
         <h3>Register</h3>
-        
-
-        
-
         <form action="" method="post" id="frm">
 
 

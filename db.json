@@ -34,5 +34,47 @@
         "email": "efgrtg@gmail.com",
         "phone": "sdfgg",
         "password": "sdfsd"
+    },
+    {
+        "name": "salem",
+        "email": "salem@gmail.com",
+        "phone": "9629124694",
+        "password": "1234"
+    },
+    {
+        "name": "salem",
+        "email": "salem@gmail.com",
+        "phone": "4855555",
+        "password": "1234"
+    },
+    {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "password": ""
+    },
+    {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "password": ""
+    },
+    {
+        "name": "salem",
+        "email": "salem@gmail.com",
+        "phone": "5426659555",
+        "password": "1234"
+    },
+    {
+        "name": "rasi",
+        "email": "rasi@gmail.com",
+        "phone": "545155251",
+        "password": "1234"
+    },
+    {
+        "name": "docker",
+        "email": "docker@gmail.com",
+        "phone": "5545451515",
+        "password": "1234"
     }
 ]
