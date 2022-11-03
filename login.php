@@ -22,15 +22,16 @@ include "database.php";
 
     <?php
 
-    if (isset($_POST["submit"])) {
-        $email = $_POST["uemail"];
-        $sql = "select * from register where email='{$_POST["uemail"]}' and password='{$_POST["upass"]}'";
-        $res = $db->query($sql);
+    if (isset($_POST["submit"])) {  
 
-        print_r($res);
+        $name = $_POST["uname"];
+        $pass = $_POST["upass"];
+        $sql = "select * from register where name='{$name}' and password='{$pass}'";
+        $res = $db->query($sql);
+        
 
         if ($res->num_rows > 0) {
-            print("bello");
+           
             $row = $res->fetch_assoc();
             $_SESSION["ID"] = $row["id"];
             $_SESSION["NAME"] = $row["name"];
@@ -48,20 +49,22 @@ include "database.php";
         <form action="" method="post">
             <div class="form-group">
                 <div class="holder">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                     </svg>
 
-                    <label for="name">E-mail</label>
+                    <label class="lblname" for="name">Username</label>
                 </div>
-                <input type="email" id="uemail" name="uemail">
+                <input type="text" id="uname" name="uname">
             </div>
             <div class="form-group">
                 <div class="holder">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+                        <path d="M7 6a1 1 0 0 1 2 0v1H7V6z" />
+                        <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z" />
                     </svg>
-                    <label for="name">Phone</label>
+
+                    <label class="lblname" for="password">New Password</label>
                 </div>
                 <input type="password" id="upass" name="upass">
             </div>
@@ -69,7 +72,7 @@ include "database.php";
                 <label><input type="checkbox"> Remember Me</label>
                 <a href="#">Forget Password ?</a>
             </div>
-            <button type="submit" name="submit" id="signin">Sign In</button>
+            <button class="btn btn-primary" name="submit" id="signin">Sign In</button>
         </form>
     </div>
 

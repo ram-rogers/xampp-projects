@@ -98,7 +98,7 @@ include "process.php";
 
 
 
-            <button type="submit" class="check" name="signup" id="signup">Register</button>
+            <button  class="check btn btn-primary" name="signup" id="signup">Register</button>
         </form>
 
         <div id="result"></div>

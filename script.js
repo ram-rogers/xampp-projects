@@ -3,26 +3,26 @@
 
 document.querySelector('.check').addEventListener('click', function() {
     //username
-    let uname = document.querySelector('.uname').value;
-    console.log(uname);
-    if (uname == '') {
-        alert("Enter Username");
-    }
+    // let uname = document.querySelector('.uname').value;
+    // console.log(uname);
+    // if (uname == '') {
+    //     alert("Enter Username");
+    // }
 
 
-    //  E-mail
-    let email = document.querySelector('.uemail').value;
-    console.log(email);
-    if (email == '') {
-        alert("Enter E-mail");
-    }
+    // //  E-mail
+    // let email = document.querySelector('.uemail').value;
+    // console.log(email);
+    // if (email == '') {
+    //     alert("Enter E-mail");
+    // }
 
-    //  Phone
-    let ph = document.querySelector('.phone').value;
-    console.log(document.querySelector('.phone').value);
-    if (ph == '') {
-        alert("Enter a Phone number");
-    }
+    // //  Phone
+    // let ph = document.querySelector('.phone').value;
+    // console.log(document.querySelector('.phone').value);
+    // if (ph == '') {
+    //     alert("Enter a Phone number");
+    // }
 
     // Number or not
     ph = Number(ph);

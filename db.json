@@ -76,5 +76,47 @@
         "email": "docker@gmail.com",
         "phone": "5545451515",
         "password": "1234"
+    },
+    {
+        "name": "android",
+        "email": "android@gmai.com",
+        "phone": "54885484",
+        "password": "1234"
+    },
+    {
+        "name": "paper",
+        "email": "paper@gmail.com",
+        "phone": "234454545",
+        "password": "1234"
+    },
+    {
+        "name": "gang",
+        "email": "gang@gmail.com",
+        "phone": "234545",
+        "password": "1234"
+    },
+    {
+        "name": "Rahuram ",
+        "email": "sam@gmail.com",
+        "phone": "1234",
+        "password": "1234"
+    },
+    {
+        "name": "fridge",
+        "email": "fridge@gmail.com",
+        "phone": "54848484",
+        "password": "1234"
+    },
+    {
+        "name": "fridge",
+        "email": "fridge@gmail.com",
+        "phone": "9629124694",
+        "password": "1234"
+    },
+    {
+        "name": "gas",
+        "email": "gas@gmail.com",
+        "phone": "13434545",
+        "password": "1234"
     }
 ]
